@@ -35,7 +35,7 @@ do
   # we will get
   #   site_about_my-screenshots_index
   BASE=`echo $BASE | sed 's,i18n.*LC_MESSAGES\/,,g' | sed 's,_,-,g' | sed 's, ,-,g' | sed 's,/,_,g' | sed 's,\.,-,g'`
-  RESOURCE=osgeolive-doc.$BASE
+  RESOURCE=duiv.$BASE
   #echo $RESOURCE
   # Register each po file as a transifex resource (an individual translatable file)
   set -x

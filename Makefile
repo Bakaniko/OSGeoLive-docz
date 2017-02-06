@@ -2,7 +2,8 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    =
+LANG          = en
+SPHINXOPTS    = -D language=$(LANG)
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = OSGeoLive
 SOURCEDIR     = source
@@ -15,8 +16,8 @@ help:
 .PHONY: help Makefile
 
 
-richard: html
-	@echo 'OK, na de build aangeroepen hoop ik'
+# example build nl:
+# make html LANG=nl
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
